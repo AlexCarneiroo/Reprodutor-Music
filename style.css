@@ -1,0 +1,133 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #242424;
+}
+body h3{
+    color: #FFF;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+.container{
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color:green;
+}
+
+.playList .spanAdd{
+    cursor: default;
+    opacity: .5;
+}
+
+.playList input{
+    display: none;
+}
+.playList{
+    width: 100%;
+    padding: 20px;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow:  0 0 10px rgba(0,0,0,.5);
+    background-color: #242424;
+    padding: 20px 0 ;
+
+}
+
+.playList .areaLogo{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgb(2,0,36);
+    margin: 10px 0px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+}
+.playList .areaLogo i{
+    font-size: 6rem;
+    color: #FFF;
+}
+.nameMusic , .duration{
+    color: #CCC;
+}
+
+label{
+    padding:15px 20px;
+    width: 200px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.8491771708683473) 24%, rgba(0,0,79,0.8855917366946778) 100%);
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: .9rem;
+    border-radius: 15px;
+}   
+.btns{
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 20px ;
+}
+.btns .prox-nex{
+    justify-content: center;
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    color: #FFF;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.btns .btn{
+    justify-content: center;
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    color: #FFF;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.btns .teste{
+    border-radius: 50%;
+    color: #FFF;
+    cursor: pointer;
+    animation: anima .5s ease-in-out;
+
+}
+#pause{
+    display: none;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    color: #FFF;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+
+@keyframes anima {
+    0%{
+        background-color: #000;
+    }
+    50%{
+        background-color: rgba(0, 0,0, .5);
+    }
+    100%{
+        background-color: transparent;
+    }
+}
