@@ -279,3 +279,17 @@ body a i{
         background-color: transparent;
     }
 }
+
+@media (max-width:400px) {
+    .cssbuttons-io-button {
+        font-size: .9rem;
+    }
+
+    body a{
+        left: 25vw;
+    }
+
+    .btns button i{
+        font-size: 1.5rem;
+    }
+}
